@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--I've included basic boilerplate meta tags to improve compatibility-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--I'll be using my own design for the Home page and rely on Bootstrap in other pages to fulfill all pset requirements-->
+        <link href="styles.css" rel="stylesheet">
+        <title>Ricardo's CS50 Pset8</title>
+    </head>
+    <body>
+        <header>
+            <img src="./images/CS50HomepageLogo.png" alt="Ricky Ricardo Text Logo">
+            <div class="dividerHeader"></div>
+            <div class="rightLinks">
+                <a href="journey.html">Journey</a>
+                <a href="read-me.html">'Read me'</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </header>
+        <div class="filler"></div>
+        <div class="intro">
+            <div class="description">
+                <h2>I am Ricky Ricardo and this is CS50!</h2>
+                <p id="mainDes">Welcome to my homepage! Here you will learn more about myself and my CS50 journey.
+                    I will share my background, hobbies and even some of my projects completed during the course of this CS50 experience. Enjoy! [1/5]</p>
+                <button onclick='changeImage()'>Next >>></button>
+            </div>
+            <div class="dividerIntro"></div>
+            <div class="image">
+                <img id="mainImg" src="https://escrituras-eremitas.com/wp-content/uploads/2022/11/pic1.jpg" alt="Ricky Ricardo pictures">
+            </div>
+        </div>
+        <span class="infoT">These are my hobbies!</span>
+        <div class="info">
+            <div class="imgf" class="first">
+                <img src="./images/chess.png" alt="Chess board">
+                <p><strong>CHESS</strong>: I <strong>love</strong> playing <strong>chess</strong>. It is a great way to relax with friends! My favorite chess player is cuban Jos&#233; Ra&#250;l Capablanca</p>
+            </div>
+            <div class="imgf" class="second">
+                <img src="https://escrituras-eremitas.com/wp-content/uploads/2014/11/meditacion1.jpg" alt="Meditation">
+                <p><strong>MEDITATION</strong>: It helps me to <strong>solve</strong> my <strong>problems</strong> by putting everything into perspective. Great to boost my concentration!</p>
+            </div>
+            <div class="imgf" class="third">
+                <img src="./images/onezero.jpeg" alt="Binary ones and zeroes">
+                <p><strong>PROGRAMMING</strong>: I fell in <strong>love</strong> with <strong>Computer Science</strong> thanks to CS50! As an enthusiastic problem solver, programming fits me like a glove.</p>
+            </div>
+            <div class="imgf" class="fourth">
+                <img src="./images/active.jpeg" alt="Fitness">
+                <p><strong>WORKOUT</strong>: My late mother was a fitness trainer and physical therapist. She made me appreciate the <strong>importance</strong> of staying <strong>active</strong>!
+            </div>
+        </div>
+        <div class="quote">
+            <span class="q1-0">"How you start is important, very important, but in the end it is how you finish that counts.
+                It is easier to be a self-starter than a self-finisher.
+                The victor in the race is not the one who dashes off swiftest but the one who leads at the finish.
+                In the race for success, speed is less important than stamina.
+                The sticker outlasts the sprinter in life's race."</span>
+            <span class="q1-1">-B. C. Forbes</span>
+        </div>
+        <div class="call-to-action">
+            <div class="textCTA">
+                <h3>I'm also a music aficionado!</h3>
+                <p>I like to listen to everything, from rap to classical, you name it!</p>
+                <p>Press the button to listen to one of my favorite in-the-zone coding 'pieces'.</p>
+            </div>
+            <div class="buttonCTA">
+                <button onclick='playMusic()'><span id="toggleMusic"><span style="font-size:15px;">🔇</span> on / OFF</span></button>
+            </div>
+        </div>
+        <footer>
+            <span class="copyright">Copyright &#169 Ricardo A. Ricardo Fernandez.(a.k.a. Ricky Ricardo) 2022</span>
+            <span class="CS50">In collaboration with Havard's CS50x</span>
+        </footer>
+
+        <script src = "homepage.js"></script>
+        <script src = "music.js"></script>
+
+    </body>
+</html>
