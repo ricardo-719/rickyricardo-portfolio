@@ -1,0 +1,459 @@
+/*I'm adding general attributes to all the elements for easier-to-understand margins and paddings.*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+
+/*I'm using flex box, as a column, allowing me to easily place the main elements top to bottom and center them*/
+/*This will also allow me to have a responsive web design*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/*For the color selection I used GIMP's color palette to translate my colors into RGB numbers*/
+header  {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: RGB(18.0% 0.5% 28.5%);
+    color: white;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.dividerHeader {
+    flex: 0 1 auto;
+    width: 300px;
+    background-color: RGB(18.0% 0.5% 28.5%);
+}
+
+.rightLinks {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    gap: 22px
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header img {
+    height: auto;
+    width: 220px;
+}
+
+.filler {
+    width: 100%;
+    height: 80px;
+    background-color: RGB(18.0% 0.5% 28.5%);
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: RGB(18.0% 0.5% 28.5%);
+    color: #E5E7EB;
+    width: 100%;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.intro img {
+    border-radius: 35px;
+    border: 2px solid RGB(73.7% 73.3% 100%);
+    height: auto;
+    width: 325px;
+    margin-top: -55px;
+    margin-bottom: 45px;
+}
+
+.intro p {
+    max-width: 470px;
+}
+
+.dividerIntro {
+    flex: 0 1 auto;
+    width: 100px;
+    background-color: RGB(18.0% 0.5% 28.5%);
+}
+
+h2 {
+    color: RGB(68% 70% 96%);
+    font-size: 36px;
+    font-weight: 800;
+    max-width: 373px;
+}
+
+.description {
+    color: RGB(75% 75% 100%);
+    font-size: 18px;
+    margin-top: -30px;
+}
+
+button {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 10px 22px;
+    background-color: RGB(73.7% 73.3% 100%);
+    color: RGB(18.0% 0.5% 28.5%);
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px #999;
+}
+
+button:hover {
+    background-color: RGB(63.7% 63.3% 90%);
+}
+
+button:active {
+    background-color: RGB(63.7% 63.3% 90%);
+    box-shadow: 0 1px #999;
+    transform: translateY(4px);
+}
+
+.infoT {
+    font-size: 36px;
+    font-weight: 800;
+    color: RGB(18.0% 0.5% 28.5%);
+    background-color: white;
+    padding: 26px;
+    margin-top: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    gap: 95px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 400px;
+    margin-top: -25px;
+}
+
+.info img {
+    height: 145px;
+    width: 145px;
+    border: 4px solid RGB(73.7% 73.3% 100%);
+    border-radius: 10px;
+}
+
+.imgf {
+    flex-wrap: wrap;
+    margin-top: -25px;
+}
+
+.info p {
+    width: 198px;
+    font-size: smaller;
+    padding: 5px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    width: 100%;
+    height: 420px;
+}
+
+.q1-0 {
+    font-size: 30px;
+    font-style: italic;
+    color: RGB(18.0% 0.5% 28.5%);
+    width: 880px;
+}
+
+.q1-1 {
+    font-weight: 700;
+    font-size: 18px;
+    color: RGB(18.0% 0.5% 28.5%);
+    margin-left: 450px;
+    align-self:auto;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+    background-color:RGB(73.7% 73.3% 100%);
+    width: 780px;
+    height: 100px;
+    color: RGB(18.0% 0.5% 28.5%);
+    border-radius: 12px;
+    margin: 100px
+}
+
+.call-to-action button {
+    border: 2px solid white;
+    width: 130px;
+    text-align: justify;
+}
+
+.call-to-action h3, .call-to-action p {
+    padding-left: 25px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: RGB(18.0% 0.5% 28.5%);
+    text-align: center;
+    color: #F9FAF8;
+    font-size: 12px;
+}
+
+.copyright {
+    display: block;
+    margin-top: 20px;
+}
+/*After getting many mobile view visual glitches I decided to fix them using this media function at the particular size, and under, where the problems arised.
+This allowed me to experiment different solutions without risking undoing the already functioning standard (full) web size.*/
+@media (max-width: 1093px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: roboto, sans-serif;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header  {
+        display: flex;
+        justify-content: space-around;
+        gap: 2px;
+        background-color: RGB(18.0% 0.5% 28.5%);
+        color: white;
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .dividerHeader {
+        flex: 0 1 0;
+        max-width: 0px;
+        background-color: RGB(18.0% 0.5% 28.5%);
+    }
+
+    .rightLinks {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        gap: 7px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    header img {
+        height: auto;
+        max-width: 120px;
+        flex: 0 1 0;
+    }
+
+    .filler {
+        width: 100%;
+        height: 80px;
+        background-color: RGB(18.0% 0.5% 28.5%);
+    }
+
+    .intro {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: RGB(18.0% 0.5% 28.5%);
+        color: #E5E7EB;
+        width: 100%;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+
+    .intro img {
+        border-radius: 35px;
+        border: 2px solid RGB(73.7% 73.3% 100%);
+        height: auto;
+        max-width: 325px;
+        flex: 0 1 0;
+        margin-top: 0px;
+        margin-bottom: 45px;
+    }
+
+    .intro p {
+        max-width: 360px;
+        flex: 0 1 0;
+    }
+
+    .dividerIntro {
+        flex: 0 1 auto;
+        max-width: 100px;
+        flex: 0 1 0;
+        background-color: RGB(18.0% 0.5% 28.5%);
+    }
+
+    h2 {
+        color: RGB(68% 70% 96%);
+        font-size: 36px;
+        font-weight: 800;
+        max-width: 360px;
+        flex: 0 1 0;
+    }
+
+    .description {
+        color: RGB(75% 75% 100%);
+        font-size: 18px;
+        margin-top: -30px;
+    }
+
+    button {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        padding: 10px 22px;
+        background-color: RGB(73.7% 73.3% 100%);
+        color: RGB(18.0% 0.5% 28.5%);
+        border-radius: 8px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 5px #999;
+    }
+
+    button:hover {
+        background-color: RGB(63.7% 63.3% 90%);
+    }
+
+    button:active {
+        background-color: RGB(63.7% 63.3% 90%);
+        box-shadow: 0 1px #999;
+        transform: translateY(4px);
+    }
+
+    .infoT {
+        font-size: 36px;
+        font-weight: 800;
+        color: RGB(18.0% 0.5% 28.5%);
+        background-color: white;
+        padding: 26px;
+        margin-top: 20px;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-around;
+        gap: 95px;
+        background-color: white;
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: fit-content;
+        margin-top: 0px;
+    }
+
+    .info img {
+        height: 100px;
+        max-width: 100px;
+        flex: 0 1 0;
+        border: 4px solid RGB(73.7% 73.3% 100%);
+        border-radius: 10px;
+    }
+
+    .imgf {
+        flex-wrap: wrap;
+        margin-top: -25px;
+    }
+
+    .info p {
+        max-width: 198px;
+        flex: 0 1 0;
+        font-size: smaller;
+        padding: 5px;
+    }
+
+    .quote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #E5E7EB;
+        width: 100%;
+        height: 420px;
+    }
+
+    .q1-0 {
+        font-size: 22px;
+        font-style: italic;
+        color: RGB(18.0% 0.5% 28.5%);
+        max-width: 320px;
+        flex: 0 1 0;
+    }
+
+    .q1-1 {
+        font-weight: 700;
+        font-size: 11px;
+        color: RGB(18.0% 0.5% 28.5%);
+        margin-left: 200px;
+        align-self:auto;
+    }
+
+    .call-to-action {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2px;
+        background-color:RGB(73.7% 73.3% 100%);
+        max-width: 390px;
+        flex: 0 1 0;
+        height: fit-content;
+        color: RGB(18.0% 0.5% 28.5%);
+        border-radius: 12px;
+        margin: 50px;
+    }
+
+    .call-to-action button {
+        border: 2px solid white;
+        max-width: 90px;
+        flex: 0 1 0;
+        text-align: justify;
+        margin-right: 5px;
+    }
+
+    .call-to-action h3 {
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    .call-to-action p {
+        padding-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+        background-color: RGB(18.0% 0.5% 28.5%);
+        text-align: center;
+        color: #F9FAF8;
+        font-size: 8px;
+    }
+
+    .copyright {
+        display: block;
+        margin-top: 20px;
+}
