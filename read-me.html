@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--I've included basic boilerplate meta tags to improve compatibility-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="read-me.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>Ricardo's CS50 Pset8</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="./index.html"><img style="max-width: 400px" src="./images/CS50HomepageLogo.png" alt="Ricky Ricardo Text Logo"></a>
+                <span class="pageTitle">Problem Set 8: "Homepage"</span>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-navigation">
+                        <ul class="navbar-nav">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="./journey.html">Journey</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="./contact.html">Contact</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+        <div class="container">
+                <br><br>
+                <p>Problem Set 8 consist on the implementation of a page, namely Homepage, utilizing three main tools: HTML, CSS and JavaScript.
+                        To practice in this way the concepts relevant for week 8 of CS50's Introduction to Computer Science by Harvard.
+                        Within the specification section certain requirements have been set in place, in this 'Read me' page we'll go through the process of creating this website and the
+                        the fulfillment of the aforementioned requirements.</p>
+                <div class="card">
+                        <div class="card-body">
+                                <div class="card-title"><h5>"1. The website must contain at least four (4) HTML pages"</h5></div>
+                                <div class="card-text">I decided to make this website with topics related to my person and to CS50. I thought in different ways in which I could divide the sections
+                                        into four main sections, each representing a different page in our site. Obviously, all the pages must be interconnected with each other in order for the
+                                        user to navigate through the site. The pages were named as following:
+                                </div>
+                        </div>
+                </div>
+                <table class="table table-danger table-striped id=reqTable">
+                        <thead>
+                                <tr>
+                                        <th>Page</th>
+                                        <th>HTML Identifier</th>
+                                        <th>Description</th>
+                                        <th>Additional Files & References</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                        <td>1. Landing Page</td>
+                                        <td>index.html</td>
+                                        <td>Homepage, with a brief general introduction of myself.</td>
+                                        <td>styles.css, homepage.js, music.js
+                                </tr>
+                                <tr>
+                                        <td>2. My CS50 Journey</td>
+                                        <td>journey.html</td>
+                                        <td>A revisiting of CS50's iconic problems, where I talk about my personal experiences.</td>
+                                        <td>journey.css, bootstrap 5</td>
+                                </tr>
+                                <tr>
+                                        <td>3. Read Me</td>
+                                        <td>read-me.html</td>
+                                        <td>A step-by-step of the making of this project (pset 8) and the following of it's requirements.</td>
+                                        <td>read-me.css, notes.txt, bootstrap 5</td>
+                                </tr>
+                                <tr>
+                                        <td>4. Contact Page</td>
+                                        <td>contact.html</td>
+                                        <td>Page with main social media accounts and contact information.</td>
+                                        <td>contact.css, bootstrap 5</td>
+                                </tr>
+                        </tbody>
+                </table>
+                <div class="card">
+                        <div class="card-body">
+                                <div class="card-title"><h5>"2. The website must use at least ten (10) distinct HTML tags besides &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, and &lt;title&gt;."</h5></div>
+                                <div class="card-text">This requirement was very easy to fulfill since it occurs organically while completing the task in question. In spite of this I decided to
+                                        list at least ten tasks I was completely certain I was going to use on my site. The list is as follow:<br>
+                                </div>
+                        </div>
+                </div>
+                <div style="margin-left: 100px;">
+                        <ol>
+                                <li>&lt;p&gt;</li>
+                                <li>&lt;img&gt;</li>
+                                <li>&lt;a&gt;</li>
+                                <li>&lt;div&gt;&lt;span&gt;</li>
+                                <li>&lt;ol&gt;&lt;ul&gt;&lt;li&gt;</li>
+                                <li>&lt;button&gt;</li>
+                                <li>&lt;header&gt;&lt;footer&gt;</li>
+                                <li>&lt;link&gt;&lt;script&gt;&lt;style&gt;...</li>
+                                <li>&lt;h1&gt;&lt;h2&gt;...</li>
+                                <li>&lt;strong&gt;&lt;em&gt;...</li>
+                                <li>And many more!</li>
+                        </ol>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                                <div class="card-title"><h5>"3. The website must integrate at least one feature from Bootstrap 5."</h5></div>
+                                <div class="card-text">This 'read me' page is a testament of that implementation.
+                                        The navigation bar, container, table and cards are all made using bootstap's classes.
+                                </div>
+                        </div>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                                <div class="card-title"><h5>"4. The website must have at least one stylesheet file of your own creation."</h5></div>
+                                <div class="card-text"> The landpage [index.html] was fully created by me without using bootstrap.
+                                        That includes the Stylesheet and the JavaScript elements. The most difficult part was to make the page fully responsive,
+                                        the initial design was created on web view just to realize at the end that it was a complete mess on mobile view. I used
+                                        @media to implement the new solutions and I am very satisfied with the end result.
+                                </div>
+                        </div>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                                <div class="card-title"><h5>"5. The website must use at least five (5) different CSS selectors."</h5></div>
+                                <div class="card-text"> Like in our second requirement, this was very easy to achieve since it occurs organically while simply developing the project.
+                                        Just to make sure I made a list with the different class selectors I was sure to implement. This is list is as follows:
+                                </div>
+                        </div>
+                </div>
+                <div style="margin-left: 60px;">
+                        <ol>
+                                <li>tag * <em>(I applied general attributes for easier-to-understand margins and paddings)</em></li>
+                                <li>tag body, header, footer</li>
+                                <li>class .intro, .info, etc. <em>(page is divided into sections each with it's own class)</em></li>
+                                <li>button, button:hover, button:active <em>(I wanted to implement really cool buttons!)</em></li>
+                                <li>ID main-navigation <em>(the collapse button requires an unique selector.)</em></li>
+                        </ol>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                                <div class="card-title"><h5>"6. The website must use at least five (5) different CSS properties, such as font-size, or margin."</h5></div>
+                                <div class="card-text"> The CSS properties that I used the most were those that involved the position and size of the different elements.
+                                        I learned how to use a display property called flex-box, this made my life easier when it came to placing each division in their
+                                        corresponding position. My top 5 list of my most used properties in this project is as follow:
+                                </div>
+                        </div>
+                </div>
+                <div style="margin-left: 60px;">
+                        <ol>
+                                <li>display:</li>
+                                <li>justify-content: and align-items:</li>
+                                <li>width: & height:</li>
+                                <li>background-color:</li>
+                                <li>font-size:, color: & font-weight</li>
+                        </ol>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                                <div class="card-title"><h5>"7. The website must integrate one or more features of JavaScript."</h5></div>
+                                <div class="card-text"> JavaScript, while confusing at first, is really satisfying to use once you get the flow going.
+                                        While I used some bootstrap JS elements, my favorite part was to create scripts of my own. In 'homepage.js' I
+                                        implemented the ability to go through different pictures and texts by the press of a button (in the landpage),
+                                        also in 'music.js' I implemented a script to play music by clicking on a button! (also in the landpage).
+                                </div>
+                        </div>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                                <div class="card-title"><h5>"8. Ensure that your site looks nice on browsers both on mobile devices as well as laptops and desktops."</h5></div>
+                                <div class="card-text"> This was by far the most difficult requirement for me to follow. The reason is because I started the building process the wrong way!
+                                        So, lesson learned, do not ignore the mobile view while designing your website. Always toggle between all relevant views to make sure of what you are doing.
+                                        Luckily, I was able to make my site functional, while the mobile view is not perfect in terms of aesthetics, it is completely functional and it shows
+                                        all of the elements the right way.
+                                </div>
+                        </div>
+                </div>
+                </div>
+                <footer>
+                        <span class="copyright">Copyright &#169 Ricardo A. Ricardo Fernandez.(a.k.a. Ricky Ricardo) 2022</span>
+                        <span class="CS50">In collaboration with Havard's CS50x</span>
+                </footer>
+        </body>
+</html>
