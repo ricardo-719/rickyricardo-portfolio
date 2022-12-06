@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+}
+.navbar {
+    background: RGB(18.0% 0.5% 28.5%);
+}
+.nav-link,
+.navbar-brand {
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: bold;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.pageTitle {
+    color: white;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+}
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    max-width: 420px;
+    gap: 15px;
+    background-color: rgba(188, 187, 255, 0.4);
+    border-radius: 12px;
+    border: 2px solid RGB(18.0% 0.5% 28.5%);
+}
+.contactInfo img {
+    max-width: 80px;
+}
+.textInfo a, .textInfo {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+.emailInfo {
+    padding-top: 12px;
+}
+.githubInfo img {
+    max-width: 75px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.linkedinInfo img {
+    max-width: 72px;
+    padding-left: 12px;
+}
+.twitterInfo img {
+    max-width: 86px
+}
+.websiteInfo img {
+    padding-left: 6px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: RGB(18.0% 0.5% 28.5%);
+    text-align: center;
+    font-weight: 600;
+    color: #F9FAF8;
+    font-size: 12px;
+}
+
+.copyright {
+    display: block;
+    padding-top: 10px;
+}
+
+.container form button {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 10px 22px;
+    background-color: RGB(73.7% 73.3% 100%);
+    color: RGB(18.0% 0.5% 28.5%);
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px #999;
+}
+
+button:hover {
+    background-color: RGB(63.7% 63.3% 90%);
+}
+
+button:active {
+    background-color: RGB(63.7% 63.3% 90%);
+    box-shadow: 0 1px #999;
+    transform: translateY(4px);
+}
